@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+    flex: 1;
+    height: 80vh;
+    overflow: hidden;
+    border: 2px solid #333;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out; 
+}
+
+.container:hover {
+    background-color: #e7cfcf; 
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+}
+
+.btn:hover {
+    background-color: #6cdbce; 
+    transform: scale(1.1); 
+}
+
+.btn:active {
+    transform: scale(1) rotate(360deg); 
+}
+
+.img {
+    width: 300px;
+    height: 200px;
+    transition: opacity 0.5s ease;
+}
+
+.img:active {
+    opacity: 0.5;
+}
+
+.img:hover {
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out; 
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.formulario:hover {
+    transform: scale(1.2) translateY(-50px); 
+    background-color: #e0e0e0; 
+}
+
+.div-animado {
+    width: 100px;
+    height: 100px;
+    background-color: #FF6347;
+    animation: cambiarColor 3s infinite alternate; 
+}
+
+@keyframes cambiarColor {
+    0% {
+        background-color: #FF6347;
+    }
+    100% {
+        background-color: #4CAF50; 
+    }
+}
+
+.formulario input,
+.formulario button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.formulario input:focus,
+.formulario button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); 
+}
+
+.formulario input {
+    transition: width 0.4s ease;
+}
+
+.formulario input:focus {
+    width: 300px; 
+}
+
+.btn-form {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.btn-form:hover {
+    transform: scale(1.1); 
+}
+
+.btn-form:active {
+    transform: scale(1) rotate(360deg); 
+}
